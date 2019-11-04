@@ -7,11 +7,15 @@
  */
 namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class ArticleController
 {
-public function homepage()
+    /**
+     * @Route("/news/{slug}")
+     */
+public function show($slug)
 {
-    return new Response("OMG MY SYMFONY FIRST PAGE");
+    return new Response(sprintf('OMG MY SYMFONY FIRST PAGE  : "%s"',$slug));
 
 }
 }
