@@ -16,6 +16,7 @@
     },
     "require-dev": {
         "sensiolabs/security-checker": "^6.0",
+        "symfony/debug-pack": "^1.0",
         "symfony/profiler-pack": "^1.0"
     },
     "config": {
